@@ -48,11 +48,11 @@ EasyPR是一个开源的中文车牌识别系统，其目标是成为一个简�
 ### 兼容性
 
 当前EasyPR是基于opencv3.0版本开发的，3.0及以上的版本应该可以兼容，以前的版本可能会存在不兼容的现象。
-
+### 使用
+![EasyPR 动画演示](resources/doc/res/usage.gif)
 ### 例子
 
 假设我们有如下的原始图片，需要识别出中间的车牌字符与颜色：
-![EasyPR 动画演示](resources/doc/res/usage.gif)
 ![EasyPR 原始图片](resources/doc/res/plate_locate.jpg)
 经过EasyPR的第一步处理车牌检测（PlateDetect）以后，我们获得了原始图片中仅包含车牌的图块：
 
