@@ -131,17 +131,17 @@ private:\
   }
 
 // Load model. compatitable withe 3.0, 3.1 and 3.2
-#ifdef CV_VERSION_THREE_TWO
-  #define LOAD_SVM_MODEL(model, path) \
-    model = ml::SVM::load(path);
-  #define LOAD_ANN_MODEL(model, path) \
-    model = ml::ANN_MLP::load(path);
-#else
-  #define LOAD_SVM_MODEL(model, path) \
-    model = ml::SVM::load<ml::SVM>(path);
-  #define LOAD_ANN_MODEL(model, path) \
-    model = ml::ANN_MLP::load<ml::ANN_MLP>(path);
-#endif
+//#ifdef CV_VERSION_THREE_TWO
+#define LOAD_SVM_MODEL(model, path) \
+  model = ml::SVM::load(path);
+#define LOAD_ANN_MODEL(model, path) \
+  model = ml::ANN_MLP::load(path);
+// #else
+//   #define LOAD_SVM_MODEL(model, path) \
+//     model = ml::SVM::load<ml::SVM>(path);
+//   #define LOAD_ANN_MODEL(model, path) \
+//     model = ml::ANN_MLP::load<ml::ANN_MLP>(path);
+// #endif
 
 }
 
